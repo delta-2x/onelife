@@ -2,17 +2,16 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#000000">
 <title>Video</title>
 <style>
-  html,body{margin:0;padding:0;background:#000;
-    overflow:hidden;overscroll-behavior:none}
+  html,body{margin:0;padding:0;background:#000;overflow:hidden}
   #stage{
-    position:fixed; top:0; left:0; right:0;
-    height:100vh;    /* Fallback für alte Browser */
-    height:100svh;   /* kleinste Viewport-Höhe, ändert sich nie */
+    height:100vh;   /* Fallback */
+    height:100dvh;  /* folgt der Adressleiste */
     background:#000;
+    position:relative;
   }
   #stage video{
     position:absolute; top:0; left:0;
